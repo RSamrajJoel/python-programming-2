@@ -1,0 +1,9 @@
+import re
+
+def is_valid_address(address):
+    pattern = r'^\d+\s+[A-Za-z]+(?:\s+[A-Za-z0-9.,#-]+)*$'
+    return bool(re.match(pattern, address.strip()))
+print(is_valid_address("123 Main St"))         
+print(is_valid_address("No address here"))     
+print(is_valid_address("456 Elm Street Apt 5"))
+print(is_valid_address("789"))                 

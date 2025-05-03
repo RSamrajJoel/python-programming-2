@@ -1,0 +1,9 @@
+import math
+
+num = int(input("Enter a number: "))
+root = math.isqrt(num)
+
+if root * root == num:
+    print("It is a perfect square.")
+else:
+    print("It is not a perfect square.")

@@ -1,0 +1,8 @@
+char = input("Enter a single letter: ")
+
+vowels = ['a', 'e', 'i', 'o', 'u']
+
+if char.lower() in vowels:
+    print(f"'{char}' is a vowel.")
+else:
+    print(f"'{char}' is a consonant.")

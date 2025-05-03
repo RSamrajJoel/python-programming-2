@@ -1,0 +1,6 @@
+string = input("Enter a string: ").lower()  # Convert to lowercase for case-insensitive check
+
+if string == string[::-1]:  # Compare string with its reverse
+    print(f"'{string}' is a palindrome.")
+else:
+    print(f"'{string}' is NOT a palindrome.")
